@@ -126,7 +126,27 @@ z-index: 99999;
     </style>
 
   </style>
-<body onload="setTimeout(stoploader,1000);>
+	<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+<img src="images/api2.png" style="width:6%;font-size:12px" ></img><p style="text-align:center;margin-right: 88px;"> Welcome to API Marketplace</p>
+            </div>
+            <div class="modal-body">
+
+                <p>Contribute Your API to Opensource for others !!</p>
+				<a href="addApi.html" style="text-align:center;">Add your API</a>
+            </div>
+
+        </div>
+				<div class='modal-footer'>+
+					 <button type='button' class='btn btn-default' style='font-size:15px' data-dismiss='modal'>Close</button>
+				 </div>
+    </div>
+</div>
+	<!-- <div id="loader"></div> -->
+<body onload="setTimeout(stoploader,1000)";>
   <header id="header">
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
@@ -181,7 +201,7 @@ z-index: 99999;
                    "<span class='label label-warning'>Verified <i class='fa fa-check-circle'></i></span>"+
         "<br><br><h6 style='color:black'>"+newPlayer.APIURL+"</h6><br>"+
         "<h6><b>Description :"+newPlayer.DESCRIPTION+"</b></h6><br>"+
-        "<h6><b style='background-color:yellow;color:#17202A '>Developer : "+newPlayer.NAME+"</b></h6>"+
+        "<h6><b style='background-color:#CACFD2;color:#34495E '>Developer :"+newPlayer.NAME+"</b></h6>"+
                 "</div>"+
                " <div class='modal-footer'>"+
                   "<button type='button' class='btn btn-default' style='font-size:15px' data-dismiss='modal'>Close</button>"+
@@ -216,6 +236,11 @@ function stoploader()
 {
 pre.style.display = 'none';
 }
+</script>
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
 </script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/popper.min.js"></script>
