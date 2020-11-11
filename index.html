@@ -147,6 +147,7 @@ z-index: 99999;
 </div>
 	<!-- <div id="loader"></div> -->
 <body onload="setTimeout(stoploader,1000)";>
+
   <header id="header">
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
@@ -164,7 +165,7 @@ z-index: 99999;
 		    </div>
 		  </header><!-- #header -->
 
-<section class="relative about-banner" ">
+<section class="relative about-banner" >
 
 				<div class="overlay overlay-bg"></div>
 				<div class="container">
@@ -178,7 +179,7 @@ z-index: 99999;
 					</div>
 				</div>
         </section>
-	   <div id="loader"></div>
+					<div id="loader"></div>
         <script>
 
 
@@ -192,7 +193,7 @@ z-index: 99999;
         + "<img src='images/api2.png' style='width:35%;margin-left:auto;margin-right:auto'></img>"
         +"<br><h6><b>"+newPlayer.TAGS+ "</b></h6><br>"+
         "<span class='label label-warning'>Verified <i class='fa fa-check-circle'></i></span>"+
-        "<button type='button' style='font-size:10px;margin:2px'class='btn btn-info' data-toggle='modal' data-target=#"+newPlayer.TAGS+">Know More</button>"+
+        "<button type='button' style='font-size:13px;margin:2px;text-align:center'class='btn btn-info' data-toggle='modal' data-target=#"+newPlayer.TAGS+"><i class='fas fa-paperclip'></i> Know More</button>"+
           "<div class='modal fade' id="+newPlayer.TAGS+" role='dialog'>"+
             "<div class='modal-dialog'>"+
 
@@ -200,9 +201,9 @@ z-index: 99999;
                 "<div class='modal-body'>"+
                    "<img src='images/api2.png 'style='width:20%;margin-left:auto;margin-right:auto'></img><br><br>"+
                    "<span class='label label-warning'>Verified <i class='fa fa-check-circle'></i></span>"+
-        "<br><br><h6 style='color:black'>"+newPlayer.APIURL+"</h6><br>"+
-        "<h6><b>Description :"+newPlayer.DESCRIPTION+"</b></h6><br>"+
-        "<h6><b style='background-color:#CACFD2;color:#34495E '>Developer :"+newPlayer.NAME+"</b></h6>"+
+        "<br><br> <h6 style='color:black'><i class='fas fa-paper-plane'></i> "+newPlayer.APIURL+"</h6><br>"+
+        "<h6><i class='fas fa-thumbtack'></i> <b>Description :"+newPlayer.DESCRIPTION+"</b></h6><br>"+
+        "<h6><i class='fas fa-user-circle'></i> <b style='background-color:#CACFD2;color:#34495E '> Developer :"+newPlayer.NAME+"</b></h6>"+
                 "</div>"+
                " <div class='modal-footer'>"+
                   "<button type='button' class='btn btn-default' style='font-size:15px' data-dismiss='modal'>Close</button>"+
