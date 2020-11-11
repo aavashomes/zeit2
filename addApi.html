@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="logo.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="images/api2.png">
+		<title>Your API | API Stack</title>
+
+        	<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script>
+	  var _0x1899=['p\x203={6:\x227\x22,8:\x220.9.2\x22,a:\x22b://0.c.2\x22,d:\x220\x22,e:\x220.g.2\x22,h:\x224\x22,i:\x221:4:j:k\x22,l:\x22m-n\x22};5.o(3);5.f();','aavashomes||com|firebaseConfig|416827212266|firebase|apiKey|AIzaSyDJEaT4VliwgO3tMAfrwktXD6TQc9fN60w|authDomain|firebaseapp|databaseURL|https|firebaseio|projectId|storageBucket|analytics|appspot|messagingSenderId|appId|web|1148e3a34a848b5d9ab293|measurementId|G|Q03PT4Z9B4|initializeApp|var','replace','split','toString','\x5cw+'];(function(_0x206f69,_0x189994){var _0x280b90=function(_0x1d7623){while(--_0x1d7623){_0x206f69['push'](_0x206f69['shift']());}};_0x280b90(++_0x189994);}(_0x1899,0xec));var _0x280b=function(_0x206f69,_0x189994){_0x206f69=_0x206f69-0x0;var _0x280b90=_0x1899[_0x206f69];return _0x280b90;};eval(function(_0x3249ef,_0x39be38,_0x166642,_0x17f336,_0x3907c4,_0x9c8de1){_0x3907c4=function(_0x20c3fc){return _0x20c3fc[_0x280b('0x2')](0x24);};if(!''[_0x280b('0x0')](/^/,String)){while(_0x166642--){_0x9c8de1[_0x166642[_0x280b('0x2')](_0x39be38)]=_0x17f336[_0x166642]||_0x166642[_0x280b('0x2')](_0x39be38);}_0x17f336=[function(_0x116c9e){return _0x9c8de1[_0x116c9e];}],_0x3907c4=function(){return _0x280b('0x3');},_0x166642=0x1;};while(_0x166642--){_0x17f336[_0x166642]&&(_0x3249ef=_0x3249ef[_0x280b('0x0')](new RegExp('\x5cb'+_0x3907c4(_0x166642)+'\x5cb','g'),_0x17f336[_0x166642]));}return _0x3249ef;}(_0x280b('0x4'),0x1a,0x1a,_0x280b('0x5')[_0x280b('0x1')]('|'),0x0,{}));
+	</script>
+		<script>
+var _0xc46c=['split','0\x201=6.1();I\x20o(){0\x205=2.3(\x225\x22).4;0\x20a=2.3(\x22a\x22).4;0\x209=2.3(\x229\x22).4;0\x207=2.3(\x227\x22).4;0\x208=2.3(\x228\x22).4;d.c(5);0\x201=6.1();d.c(1);0\x20h=6.1().i(\x27j/\x27).k().l({m:5,n:a,q:9,A:7,p:8});0\x20r=b.H(\x22G\x20F\x20E\x20D\x20!!\x20C\x20B\x20z\x27s\x20y\x20!!\x20\x22);x(r==w){b.e(\x27v.f\x27,\x27g\x27)}u{b.e(\x27t.f\x27,\x27g\x27)}}','toString','var|database|document|getElementById|value|name|firebase|desc|tags|url|email|window|log|console|open|html|_blank|data|ref|HouseOfApi|push|set|NAME|EMAIL|writeuser|TAGS|APIURL||ll|add|else|index|true|if|Upload|It|DESCRIPTION|Checking|After|Request|Your|Got|We|confirm|function','\x5cw+','fromCharCode','replace'];(function(_0x276421,_0xc46c0d){var _0x451eb8=function(_0x34a421){while(--_0x34a421){_0x276421['push'](_0x276421['shift']());}};_0x451eb8(++_0xc46c0d);}(_0xc46c,0x109));var _0x451e=function(_0x276421,_0xc46c0d){_0x276421=_0x276421-0x0;var _0x451eb8=_0xc46c[_0x276421];return _0x451eb8;};eval(function(_0x11d335,_0x500bc2,_0x3e6cff,_0xbd82a0,_0x2755cc,_0x255eb0){_0x2755cc=function(_0x58923f){return(_0x58923f<_0x500bc2?'':_0x2755cc(parseInt(_0x58923f/_0x500bc2)))+((_0x58923f=_0x58923f%_0x500bc2)>0x23?String[_0x451e('0x6')](_0x58923f+0x1d):_0x58923f[_0x451e('0x3')](0x24));};if(!''[_0x451e('0x0')](/^/,String)){while(_0x3e6cff--){_0x255eb0[_0x2755cc(_0x3e6cff)]=_0xbd82a0[_0x3e6cff]||_0x2755cc(_0x3e6cff);}_0xbd82a0=[function(_0x34829f){return _0x255eb0[_0x34829f];}],_0x2755cc=function(){return _0x451e('0x5');},_0x3e6cff=0x1;};while(_0x3e6cff--){_0xbd82a0[_0x3e6cff]&&(_0x11d335=_0x11d335['replace'](new RegExp('\x5cb'+_0x2755cc(_0x3e6cff)+'\x5cb','g'),_0xbd82a0[_0x3e6cff]));}return _0x11d335;}(_0x451e('0x2'),0x2d,0x2d,_0x451e('0x4')[_0x451e('0x1')]('|'),0x0,{}));
+
+		</script>
+
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>
+		  <header id="header">
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"><h2>Api Stack</h2>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+			          <li><a href="index.html">Home <i class='fa fa-home'></i></a></li>
+
+			        </ul>
+			      </nav><!-- #nav-menu-container -->
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="relative about-banner">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Add Your Api !
+							</h1>
+							<p class="text-white link-nav"><a href="index.html">Home </a>  &#8594;  <a href="add.html"> Add Your Api!</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact-page-area">
+				<div class="container">
+					<div class="row">
+						<div class="map-wrap" style="width:100%;"></div>
+
+						<div class="col-lg-8">
+							<form class="form-area contact-form text-right" onsubmit="return writeuser(); ">
+								<div class="row">
+									<div class="col-lg-6 form-group">
+										<input id="name" type="text" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required type="text">
+
+										<input id="email" type="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
+                                        <input id="url" type="url" placeholder="Enter Api URL"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Api URL'" class="common-input mb-20 form-control" required="">
+                    			   <input id="desc" type="text" placeholder="Enter API Description"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter API Description'" class="common-input mb-20 form-control" required="">
+  <input id="tags" type="text" placeholder="Enter Name Of API"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name Of API'" class="common-input mb-20 form-control" required="">
+
+
+									<div class="col-lg-12">
+										<div class="alert-msg" style="text-align: left;"></div>
+										<button type="submit" class="primary-btn">Send Request</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End contact-page Area -->
+
+            <!-- start footer Area -->
+
+            <!-- End footer Area -->
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+
+  			<script src="js/easing.min.js"></script>
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+    		<script src="js/jquery.tabs.min.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+            <script src="js/isotope.pkgd.min.js"></script>
+			<script src="js/waypoints.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/simple-skillbar.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>

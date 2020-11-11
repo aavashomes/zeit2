@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="logo.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="images/api2.png">
+		<title>API Stack</title>
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        	<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background : #f1f2f3  url('3.gif')
+no-repeat center;
+z-index: 99999;
+}
+</style>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	  var _0x1899=['p\x203={6:\x227\x22,8:\x220.9.2\x22,a:\x22b://0.c.2\x22,d:\x220\x22,e:\x220.g.2\x22,h:\x224\x22,i:\x221:4:j:k\x22,l:\x22m-n\x22};5.o(3);5.f();','aavashomes||com|firebaseConfig|416827212266|firebase|apiKey|AIzaSyDJEaT4VliwgO3tMAfrwktXD6TQc9fN60w|authDomain|firebaseapp|databaseURL|https|firebaseio|projectId|storageBucket|analytics|appspot|messagingSenderId|appId|web|1148e3a34a848b5d9ab293|measurementId|G|Q03PT4Z9B4|initializeApp|var','replace','split','toString','\x5cw+'];(function(_0x206f69,_0x189994){var _0x280b90=function(_0x1d7623){while(--_0x1d7623){_0x206f69['push'](_0x206f69['shift']());}};_0x280b90(++_0x189994);}(_0x1899,0xec));var _0x280b=function(_0x206f69,_0x189994){_0x206f69=_0x206f69-0x0;var _0x280b90=_0x1899[_0x206f69];return _0x280b90;};eval(function(_0x3249ef,_0x39be38,_0x166642,_0x17f336,_0x3907c4,_0x9c8de1){_0x3907c4=function(_0x20c3fc){return _0x20c3fc[_0x280b('0x2')](0x24);};if(!''[_0x280b('0x0')](/^/,String)){while(_0x166642--){_0x9c8de1[_0x166642[_0x280b('0x2')](_0x39be38)]=_0x17f336[_0x166642]||_0x166642[_0x280b('0x2')](_0x39be38);}_0x17f336=[function(_0x116c9e){return _0x9c8de1[_0x116c9e];}],_0x3907c4=function(){return _0x280b('0x3');},_0x166642=0x1;};while(_0x166642--){_0x17f336[_0x166642]&&(_0x3249ef=_0x3249ef[_0x280b('0x0')](new RegExp('\x5cb'+_0x3907c4(_0x166642)+'\x5cb','g'),_0x17f336[_0x166642]));}return _0x3249ef;}(_0x280b('0x4'),0x1a,0x1a,_0x280b('0x5')[_0x280b('0x1')]('|'),0x0,{}));
+</script>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+    <style>
+    .btn {
+      background-color: DodgerBlue;
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: RoyalBlue;
+    }
+    </style>
+    <style>
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 9px;
+    margin-bottom: 20px;
+    }
+
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+
+      }
+    }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    </style>
+    </style>
+    <style>
+    #loader{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background : #f1f2f3  url('3.gif')
+    no-repeat center;
+    z-index: 99999;
+    }
+    </style>
+
+  </style>
+<body onload="setTimeout(stoploader,1000);>
+  <header id="header">
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"><h2>API STACK</h2>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+			          <li><a href="index.html">Home <i class='fa fa-home'></i></a></li>
+						<li><a href="addApi.html">Add Your Api <i class='fa fa-file-alt'></i></a></li>
+
+			        </ul>
+			      </nav><!-- #nav-menu-container -->
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+
+<section class="relative about-banner" ">
+
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-sm-4">
+							<h1 class="text-white">
+								Api Stack !
+							</h1>
+
+						</div>
+					</div>
+				</div>
+        </section>
+        <script>
+
+
+        var playersRef = firebase.database().ref("HouseOfApi/");
+
+        playersRef.on("child_added", function(data, prevChildKey) {
+           var newPlayer = data.val();
+           console.log("NAME: " + newPlayer.NAME);
+           console.log("EMAIL: " + newPlayer.APIURL);
+         $("#enter").append("<div class='column'>"+" <div class='card'>"
+        + "<img src='images/api2.png' style='width:35%;margin-left:auto;margin-right:auto'></img>"
+        +"<br><h6><b>"+newPlayer.TAGS+ "</b></h6><br>"+
+        "<span class='label label-warning'>Verified <i class='fa fa-check-circle'></i></span>"+
+        "<button type='button' style='font-size:10px;margin:2px'class='btn btn-info' data-toggle='modal' data-target=#"+newPlayer.TAGS+">Know More</button>"+
+          "<div class='modal fade' id="+newPlayer.TAGS+" role='dialog'>"+
+            "<div class='modal-dialog'>"+
+
+              "<div class='modal-content'>"+
+                "<div class='modal-body'>"+
+                   "<img src='images/api2.png 'style='width:20%;margin-left:auto;margin-right:auto'></img><br><br>"+
+                   "<span class='label label-warning'>Verified <i class='fa fa-check-circle'></i></span>"+
+        "<br><br><h6 style='color:black'>"+newPlayer.APIURL+"</h6><br>"+
+        "<h6><b>Description :"+newPlayer.DESCRIPTION+"</b></h6><br>"+
+        "<h6><b style='background-color:#CACFD2;color:#34495E '>Developer :"+newPlayer.NAME+"</b></h6>"+
+                "</div>"+
+               " <div class='modal-footer'>"+
+                  "<button type='button' class='btn btn-default' style='font-size:15px' data-dismiss='modal'>Close</button>"+
+               " </div>"+
+              "</div>"+
+
+            "</div>"+
+          "</div>"+
+          "</div>"+"</div>");
+
+        });
+            </script>
+<br>
+<section  >
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col">
+						<h6 class="text-white"class="justify-content-center"id="enter"></h6>
+
+						</div>
+					</div>
+				</div>
+			</section>
+</body>
+  <!-- loader -->
+<script>
+var pre=document.getElementById('loader');
+
+function stoploader()
+{
+pre.style.display = 'none';
+}
+</script>
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+
+  			<script src="js/easing.min.js"></script>
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+    		<script src="js/jquery.tabs.min.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+            <script src="js/isotope.pkgd.min.js"></script>
+			<script src="js/waypoints.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/simple-skillbar.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		</body>
+	</html>

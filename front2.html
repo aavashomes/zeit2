@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="logo.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Bitpie Appstore</title>
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        	<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+<style>
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 9px;
+margin-bottom: 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</style>
+<style>
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background : #f1f2f3  url('3.gif')
+no-repeat center;
+z-index: 99999;
+}
+</style>
+
+	<script>
+	  // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDJEaT4VliwgO3tMAfrwktXD6TQc9fN60w",
+      authDomain: "aavashomes.firebaseapp.com",
+      databaseURL: "https://aavashomes.firebaseio.com",
+      projectId: "aavashomes",
+      storageBucket: "aavashomes.appspot.com",
+      messagingSenderId: "416827212266",
+      appId: "1:416827212266:web:1148e3a34a848b5d9ab293",
+      measurementId: "G-Q03PT4Z9B4"
+    };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+	</script>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+
+<body onload="setTimeout(stoploader,1000)">
+<div id="loader"></div>
+  <header id="header" style="background-color:#052f4e
+">
+		    <div class="container main-menu" >
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"> <img src="logo2.png" style="width:50px;border-radius:50%"></img></a>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+			          <li><a href="index.html" style="color:white;font-size:15px">Home</a></li>
+						<li><a href="category.html"  style="color:white;font-size:15px">Category</a></li>
+
+
+			        </ul>
+			      </nav><!-- #nav-menu-container -->
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+<script>
+
+
+var playersRef = firebase.database().ref("HouseOfApi/");
+
+playersRef.on("child_added", function(data, prevChildKey) {
+   var newPlayer = data.val();
+   console.log("NAME: " + newPlayer.NAME);
+   console.log("EMAIL: " + newPlayer.EMAIL);
+ $("#enter").append(" <div class='column'>"+" <div class='card'>"
++ "<img src="+newPlayer.Logo+" style='width:35%;margin-left:auto;margin-right:auto'></img>"
++"<br><h6><b>"+newPlayer.ApkName+ "</b></h6>"+
+newPlayer.Verified+
+//"<p style='color:  #20af52'><span style='font-size:10px;'>Verified &#10004;</span></p>"+
+//"<label class='btn-success'>"+newPlayer.Verified+"</label>"+
+
+"<button class='btn'><i class='fa fa-download'></i> Download</button>"+
+"<button type='button' style='margin:2px'class='btn btn-info' data-toggle='modal' data-target=#"+newPlayer.ApkName+">Know More</button>"+
+  "<div class='modal fade' id="+newPlayer.ApkName+" role='dialog'>"+
+    "<div class='modal-dialog'>"+
+
+      "<div class='modal-content'>"+
+        "<div class='modal-body'>"+
+           "<img src="+newPlayer.Logo+" style='width:40%;margin-left:auto;margin-right:auto'></img>"+
+"<br><br><h6 style='color:black'>"+newPlayer.ApkName+"</h6>"+
+"<h6><b>Description :"+newPlayer.Description+"</b></h6>"+
+"<h6><b>Developer :"+newPlayer.OwnerName+"</b></h6>"+
+ "<img src="+newPlayer.Screen1+" style='width:40%;margin-left:auto'></img>"+
+ "<img src="+newPlayer.Screen2+" style='width:40%;margin-left:auto'></img>"+
+ "<br><br><button class='btn'><i class='fa fa-download'></i> Install</button>"+
+        "</div>"+
+       " <div class='modal-footer'>"+
+          "<button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>"+
+       " </div>"+
+      "</div>"+
+
+    "</div>"+
+  "</div>"+
+  "</div>"+"</div>");
+
+});
+var playersRef = firebase.database().ref("Games/");
+
+playersRef.on("child_added", function(data, prevChildKey) {
+   var newPlayer = data.val();
+   console.log("NAME: " + newPlayer.Name);
+   console.log("EMAIL: " + newPlayer.Email);
+ $("#name").append(" <div class='column'>"+" <div class='card'>"
++ "<img src="+newPlayer.Url+" style='width:30%;margin-left:auto;margin-right:auto'></img>"
++"<br><br><h6><b>"+newPlayer.Name+"</b></h6>"+"<br>"+
+"<br><br><h6><b>"+newPlayer.Description+"</b></h6>"+
+"<br><br><br><br><br><br><button class='btn'><i class='fa fa-download'></i> Download</button>"+
+  "</div>"+"</div>");
+
+
+
+});
+    </script>
+
+<section class="relative about-banner" >
+
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Games
+							</h1>
+
+						</div>
+					</div>
+				</div>
+
+<section class="faq-area pb-100" >
+
+				<div class="container">
+
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+						<h1 class="text-white">
+
+							</h1>
+						<h6  class="text-white"class="justify-content-center"id="enter"></h6>
+
+						</div>
+					</div>
+<!--<div class="row justify-content-center">
+						<div class="col-lg-8">
+						<h1 class="text-white">
+								Entertainment
+							</h1>
+						<h6 class="text-white"class="justify-content-center"id="enter"></h6>
+
+						</div>
+					</div>
+				</div>
+			</section>-->
+</body>
+  <!-- loader -->
+<script>
+var pre=document.getElementById('loader');
+
+function stoploader()
+{
+pre.style.display = 'none';
+}
+</script>
+
+
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+
+  			<script src="js/easing.min.js"></script>
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+    		<script src="js/jquery.tabs.min.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+            <script src="js/isotope.pkgd.min.js"></script>
+			<script src="js/waypoints.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/simple-skillbar.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>
